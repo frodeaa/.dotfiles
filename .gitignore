@@ -1,0 +1,17 @@
+*.egg-info
+*.iml
+*.log
+*.out
+*.spl
+*.swo
+.*.swp
+.DS_Store
+.bash_history
+.dotfiles
+.npm
+.pytest_cache
+.ropeproject
+.swp
+env
+node_modules
+tags
