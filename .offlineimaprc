@@ -1,0 +1,57 @@
+[general]
+pythonfile = ~/.offlineimap.py
+accounts = Gmail, Dintero
+
+[Account Gmail]
+localrepository = Gmail-Local
+remoterepository = Gmail-Remote
+postsynchook = notmuch new
+
+[Account Dintero]
+localrepository = Dintero-Local
+remoterepository = Dintero-Remote
+postsynchook = notmuch new
+
+[Repository Gmail-Local]
+type = Maildir
+localfolders = ~/mail/private
+realdelete = no
+
+[Repository Gmail-Remote]
+type = Gmail
+remoteuser = frode.aa@gmail.com
+auth_mechanisms = XOAUTH2
+oauth2_client_id_eval = pass_store("frode.aa@gmail.com/client_id")
+oauth2_client_secret_eval = pass_store("frode.aa@gmail.com/client_secret")
+oauth2_refresh_token_eval = pass_store("frode.aa@gmail.com/refresh_token")
+realdelete = no
+nametrans = gmail_nametrans
+folderfilter = gmail_folderfilter
+ssl = true
+sslcacertfile = /usr/local/etc/openssl/cert.pem
+
+[Repository Dintero-Local]
+type = Maildir
+localfolders = ~/mail/work
+realdelete = no
+
+[Repository Dintero-Remote]
+type = Gmail
+remoteuser = frode@dintero.com
+auth_mechanisms = XOAUTH2
+oauth2_client_id_eval = pass_store("frode@dintero.com/client_id")
+oauth2_client_secret_eval = pass_store("frode@dintero.com/client_secret")
+oauth2_refresh_token_eval = pass_store("frode@dintero.com/refresh_token")
+realdelete = no
+nametrans = gmail_nametrans
+folderfilter = gmail_folderfilter
+ssl = true
+sslcacertfile = /usr/local/etc/openssl/cert.pem
+
+[mbnames]
+enabled = yes
+filename = ~/.mutt/mailboxes
+header = "mailboxes "
+peritem = "+%(foldername)s"
+sep = " "
+footer = "\n"
