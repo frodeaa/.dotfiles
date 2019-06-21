@@ -1,3 +1,5 @@
+export HOMEBREW_NO_ANALYTICS=1
+export HOMEBREW_NO_GITHUB_API=1
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 export PATH=/usr/local/bin:$PATH
