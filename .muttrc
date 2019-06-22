@@ -13,6 +13,7 @@ set sort_re
 set wrap=80
 set nm_default_uri = "notmuch://~/mail"
 set hostname="belle.local"
+set mailcap_path = ~/.mutt/mailcap
 unset confirmappend  # don't ask, just do!
 unset mark_old       # read/new is good enough for me
 unset move           # gmail does that
