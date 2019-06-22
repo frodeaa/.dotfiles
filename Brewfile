@@ -2,6 +2,8 @@ tap "homebrew/bundle"
 tap "homebrew/core"
 
 cask "iterm2"
+cask "firefox"
+cask "nomachine"
 
 brew "awscli"
 brew "bash"
