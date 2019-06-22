@@ -67,3 +67,4 @@ augroup mygroup
 augroup end
 
 syntax on
+colorscheme nord
