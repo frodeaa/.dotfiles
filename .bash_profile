@@ -34,7 +34,11 @@ set -o vi
 # if this is interactive shell, then bind hh to Ctrl-r (for Vi mode check doc)
 if [[ $- =~ .*i.* ]]; then bind '"\C-r": "hh -- \C-j"'; fi
 
-PS1="\t\[$(tput sgr0)\] \[\033[0;32m\]\u@\h \[\e[1;33m\]\w\[\033[1;31m\]\$(git branch 2>/dev/null \
-	 | grep -e '\* ' | sed 's/^..\(.*\)/ (\1)/')\[\033[0;00m\]\n \$ "
+c_blue='\e[0;34m'
+c_gray='\e[01;30m'
+c_cyan='\e[0;36m'
+c_reset='\e[0m'
+PS1="\t\[${c_blue}$(tput sgr0)${c_gray}\] \[${c_blue}\u@\h \[${c_gray}\]\w\[${c_cyan}\]\$(git branch 2>/dev/null \
+	 | grep -e '\* ' | sed 's/^..\(.*\)/ (\1)/')\[${c_reset}\]\n \$ "
 
 test -r "~/.dir_colors" && eval $(gdircolors ~/.dir_colors)
