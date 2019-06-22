@@ -24,6 +24,8 @@ source $HOME/.fzf.bash
 
 alias config='/usr/local/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias mutt='/usr/local/bin/neomutt'
+alias ls='gls --color=auto'
+alias ll='ls -al'
 
 shopt -s histappend              # append new history items to .bash_history
 set -o vi
@@ -34,3 +36,5 @@ if [[ $- =~ .*i.* ]]; then bind '"\C-r": "hh -- \C-j"'; fi
 
 PS1="\t\[$(tput sgr0)\] \[\033[0;32m\]\u@\h \[\e[1;33m\]\w\[\033[1;31m\]\$(git branch 2>/dev/null \
 	 | grep -e '\* ' | sed 's/^..\(.*\)/ (\1)/')\[\033[0;00m\]\n \$ "
+
+test -r "~/.dir_colors" && eval $(gdircolors ~/.dir_colors)
