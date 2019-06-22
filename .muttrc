@@ -1,0 +1,25 @@
+set date_format = "!%Y-%m-%d %H:%M %Z"
+set delete           # don't ask, just do
+set editor='vim + -c "set nocp" -c "set textwidth=72" -c "set wrap" -c "silent /^" -c "noh" -c "vmap <leader>s c[... snip ...]<ESC>"
+set fast_reply=yes
+set followup_to=yes
+set include=yes
+set index_format = "%Z  %D  %-20.20F  (%4c)  %s"
+set query_command = "contacts -Sf '%eTOKEN%n' '%s' | sed -e 's/TOKEN/\t/g'"
+set quit             # don't ask, just do!!
+set sort     = threads
+set sort_aux = reverse-last-date-received
+set sort_re
+set wrap=80
+unset confirmappend  # don't ask, just do!
+unset mark_old       # read/new is good enough for me
+unset move           # gmail does that
+
+auto_view text/html
+alternative_order text/plain text/enriched text/html
+
+source ~/.mutt/mailboxes
+source ~/.mutt/bindings
+source ~/.mutt/macros
+source ~/.mutt/gpg
+source ~/.mutt/hooks
