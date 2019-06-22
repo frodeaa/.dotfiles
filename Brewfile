@@ -3,10 +3,12 @@ tap "homebrew/core"
 
 cask "iterm2"
 
+brew "awscli"
 brew "bash"
 brew "git"
 brew "gnupg"
 brew "hh"
+brew "jq"
 brew "msmtp"
 brew "mutt"
 brew "notmuch"
