@@ -14,7 +14,7 @@ postsynchook = notmuch new
 
 [Repository Gmail-Local]
 type = Maildir
-localfolders = ~/mail/private
+localfolders = ~/mail/frodeaa
 realdelete = no
 
 [Repository Gmail-Remote]
@@ -32,7 +32,7 @@ sslcacertfile = /usr/local/etc/openssl/cert.pem
 
 [Repository Dintero-Local]
 type = Maildir
-localfolders = ~/mail/work
+localfolders = ~/mail/dintero
 realdelete = no
 
 [Repository Dintero-Remote]

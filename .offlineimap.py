@@ -7,6 +7,7 @@ def gmail_nametrans(foldername):
     return {
         '[Gmail]/Sent Mail': 'sent',
         '[Gmail]/All Mail': 'archive',
+        '[Gmail]/Drafts': 'drafts',
     }.get(foldername, foldername)
 
 def gmail_folderfilter(foldername):
@@ -14,4 +15,5 @@ def gmail_folderfilter(foldername):
         'INBOX',
         '[Gmail]/All Mail',
         '[Gmail]/Sent Mail',
+        '[Gmail]/Drafts',
     ]
