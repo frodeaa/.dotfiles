@@ -21,6 +21,7 @@ map <C-å> <C-]> """ Ctrl-] does not work with Norwegian keyboar
 
 nnoremap <C-p> :GFiles<CR>
 nnoremap <Leader>b :Buffers<CR>
+nnoremap <Leader>h :History<CR>
 nnoremap \ :Ag<ENTER>
 
 syntax on
