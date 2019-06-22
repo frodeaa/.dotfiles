@@ -1,2 +1,17 @@
 [database]
-  path=/Users/frode/mail
+path=/Users/frode/mail
+
+[user]
+name=Frode Aannevik
+primary_email=frode.aa@gmail.com
+other_email=frode@dintero.com
+
+[new]
+tags=unread;inbox;
+ignore=spam;trash;
+
+[maildir]
+synchronize_flags=true
+
+[search]
+exclude_tags=
