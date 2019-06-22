@@ -23,3 +23,4 @@ source ~/.mutt/bindings
 source ~/.mutt/macros
 source ~/.mutt/gpg
 source ~/.mutt/hooks
+source ~/.mutt/accounts/frodeaa

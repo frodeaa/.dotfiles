@@ -1,4 +1,4 @@
 folder-hook frodeaa/* source ~/.mutt/accounts/frodeaa
-folder-hook dintero/* source ~/.mutt/accounts/frode
+folder-hook dintero/* source ~/.mutt/accounts/dintero
 
 source ~/.mutt/accounts/frodeaa
