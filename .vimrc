@@ -66,5 +66,6 @@ augroup mygroup
   autocmd User CocJumpPlaceholder call CocActionAsync('showSignatureHelp')
 augroup end
 
+filetype plugin indent on
 syntax on
 colorscheme nord

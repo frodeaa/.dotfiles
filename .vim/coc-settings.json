@@ -3,4 +3,5 @@
   "prettier.trailingComma": "all",
   "prettier.tslintIntegration": true,
   "python.jediEnabled": false,
+  "go.commandPath": "~/go/bin/gopls"
 }
