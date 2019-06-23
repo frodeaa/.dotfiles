@@ -4,7 +4,7 @@
 *.out
 *.spl
 *.swo
-.*.swp
+*.swp
 .DS_Store
 .bash_history
 .dotfiles
