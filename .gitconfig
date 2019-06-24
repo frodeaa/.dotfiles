@@ -3,6 +3,11 @@
   email = frode.aa@gmail.com
   signingkey = CFFA2237F1526F8F8024EAC918F1D5F4837B359D
 
+[sendemail]
+  smtpserver = /usr/local/bin/msmtp
+  assume8bitEncoding = true
+  confirm = auto
+
 [alias]
   aliases = !git config --get-regexp 'alias.*' | colrm 1 6 | sed 's/[ ]/ = /' | sort
   br = branch
