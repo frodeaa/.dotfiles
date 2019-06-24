@@ -8,6 +8,7 @@
   br = branch
   ci = commit
   co = checkout
+  log1 = log --pretty=oneline --abbrev-commit
   st = status
 [core]
 	excludesfile = /Users/frode/.gitignore
