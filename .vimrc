@@ -7,6 +7,7 @@ set hidden
 set hlsearch
 set incsearch
 set laststatus=2
+set mouse=a
 set nobackup
 set nocompatible
 set nonumber
