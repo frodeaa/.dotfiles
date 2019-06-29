@@ -3,10 +3,12 @@
 *.log
 *.out
 *.spl
+*.swn
 *.swo
 *.swp
 .DS_Store
 .bash_history
+.build
 .dotfiles
 .npm
 .pytest_cache
