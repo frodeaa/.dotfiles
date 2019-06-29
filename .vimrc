@@ -29,6 +29,7 @@ let mapleader = ','
 map <C-å> <C-]> """ Ctrl-] does not work with Norwegian keyboar
 
 nmap <leader>rn :call CocActionAsync('rename')
+nmap <leader>f  :call CocActionAsync('formatSelected', visualmode())<CR>
 
 inoremap <silent><expr> <c-space> coc#refresh()
 nnoremap <C-p> :GFiles<CR>
