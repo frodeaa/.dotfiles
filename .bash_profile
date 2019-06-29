@@ -24,9 +24,10 @@ source /usr/local/etc/bash_completion.d/git-completion.bash
 source $HOME/.fzf.bash
 
 alias config='/usr/local/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
-alias mutt='/usr/local/bin/neomutt'
-alias ls='gls --color=auto'
+alias lb='vim ~/Documents/logbook/$(date "+%Y-%m-%d").md'
 alias ll='ls -al'
+alias ls='gls --color=auto'
+alias mutt='/usr/local/bin/neomutt'
 
 shopt -s histappend              # append new history items to .bash_history
 set -o vi
