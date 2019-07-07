@@ -15,9 +15,8 @@ set nowritebackup
 set rtp+=/usr/local/opt/fzf
 set shortmess+=c
 set signcolumn=yes
-set smartindent
 set statusline=%<%F%h%m%r%h%w%y\ %=col:%c%V\ lin:%l\,%L\ %P
-set ts=4 sts=4 sw=4 expandtab
+set ts=4 sts=4 sw=4 expandtab smarttab
 set updatetime=300
 set vb t_vb=
 
