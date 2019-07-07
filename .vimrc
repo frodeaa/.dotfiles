@@ -10,7 +10,7 @@ set laststatus=2
 set mouse=a
 set nobackup
 set nocompatible
-set nonumber
+set number
 set nowritebackup
 set rtp+=/usr/local/opt/fzf
 set shortmess+=c
