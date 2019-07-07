@@ -56,8 +56,6 @@ function! s:show_documentation()
   endif
 endfunction
 
-autocmd CursorHold * silent call CocActionAsync('highlight')
-
 augroup mygroup
   autocmd!
   " Setup formatexpr specified filetype(s).

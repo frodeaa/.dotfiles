@@ -16,3 +16,9 @@
 [submodule "/Users/frode/.vim/pack/default/start/nord-vim.git"]
 	path = /Users/frode/.vim/pack/default/start/nord-vim.git
 	url = https://github.com/arcticicestudio/nord-vim.git
+[submodule "/Users/frode/.vim/pack/default/start/vim-colors-solarized.git"]
+	path = /Users/frode/.vim/pack/default/start/vim-colors-solarized.git
+	url = git://github.com/altercation/vim-colors-solarized.git
+[submodule "/Users/frode/.vim/pack/default/start/vim-better-whitespace.git"]
+	path = /Users/frode/.vim/pack/default/start/vim-better-whitespace.git
+	url = git://github.com/ntpeters/vim-better-whitespace.git
