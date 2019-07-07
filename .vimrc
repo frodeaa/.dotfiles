@@ -42,10 +42,10 @@ nnoremap <silent> <space>o  :<C-u>CocList outline<cr>
 nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 nnoremap <silent> <space>s  :<C-u>CocList -I symbols<cr>
 nnoremap <silent> K :call <SID>show_documentation()<CR>
-nnoremap <silent> gd :call CocAction('jumpDefinition')<CR>
-nnoremap <silent> gi :call CocAction('jumpImplementation')<CR>
-nnoremap <silent> gr :call CocAction('jumpReferences')<CR>
-nnoremap <silent> gy :call CocAction('jumpTypeDefinition')<CR>
+nnoremap <silent> gd :call CocActionAsync('jumpDefinition')<CR>
+nnoremap <silent> gi :call CocActionAsync('jumpImplementation')<CR>
+nnoremap <silent> gr :call CocActionAsync('jumpReferences')<CR>
+nnoremap <silent> gy :call CocActionAsync('jumpTypeDefinition')<CR>
 nnoremap \ :Ag<ENTER>
 
 function! s:show_documentation()
