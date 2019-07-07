@@ -18,6 +18,7 @@ export PERL_MM_OPT="INSTALL_BASE=$PERL_LOCAL_LIB_ROOT"
 export PATH="$PERL_LOCAL_LIB_ROOT/bin:$PATH";
 export PATH="$HOME/.bin:$PATH"
 export PATH="$HOME/go/bin:$PATH"
+export PATH="$HOME/Library/Python/2.7/bin:$PATH"
 
 source /usr/local/etc/bash_completion.d/pass
 source /usr/local/etc/bash_completion.d/git-completion.bash
