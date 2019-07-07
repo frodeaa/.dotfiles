@@ -16,7 +16,6 @@ set rtp+=/usr/local/opt/fzf
 set shortmess+=c
 set signcolumn=yes
 set smartindent
-set spell
 set statusline=%<%F%h%m%r%h%w%y\ %=col:%c%V\ lin:%l\,%L\ %P
 set ts=4 sts=4 sw=4 expandtab
 set updatetime=300
