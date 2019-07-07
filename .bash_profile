@@ -21,6 +21,7 @@ export PATH="$HOME/go/bin:$PATH"
 export PATH="$HOME/Library/Python/2.7/bin:$PATH"
 
 source /usr/local/etc/bash_completion.d/pass
+source /usr/local/etc/bash_completion.d/pass-oauth2
 source /usr/local/etc/bash_completion.d/git-completion.bash
 source $HOME/.fzf.bash
 
