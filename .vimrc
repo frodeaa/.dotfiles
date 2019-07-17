@@ -66,4 +66,5 @@ augroup end
 
 filetype plugin indent on
 syntax on
-colorscheme nord
+set background=light
+colorscheme solarized
