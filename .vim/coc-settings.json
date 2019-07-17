@@ -3,5 +3,12 @@
   "prettier.trailingComma": "all",
   "prettier.tslintIntegration": true,
   "python.jediEnabled": false,
-  "go.commandPath": "~/go/bin/gopls"
+  "go.commandPath": "~/go/bin/gopls",
+  "languageserver": {
+    "golang": {
+      "command": "gopls",
+      "rootPatterns": ["go.mod", ".vim/", ".git/", ".hg/"],
+      "filetypes": ["go"]
+    }
+  }
 }
