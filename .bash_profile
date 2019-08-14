@@ -47,3 +47,8 @@ PS1="\t\[${c_blue}$(tput sgr0)${c_gray}\] \[${c_blue}\u@\h \[${c_gray}\]\w\[${c_
 	 | grep -e '\* ' | sed 's/^..\(.*\)/ (\1)/')\[${c_reset}\]\n \$ "
 
 test -r "~/.dir_colors" && eval $(gdircolors ~/.dir_colors)
+
+gpg_reset() {
+    gpgconf --kill gpg-agent
+    gpg-connect-agent updatestartuptty /bye >/dev/null
+}
