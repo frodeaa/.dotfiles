@@ -1,13 +1,13 @@
 [general]
 pythonfile = ~/.offlineimap.py
-accounts = Gmail, Dintero
+accounts = frodeaa, dintero
 
-[Account Gmail]
+[Account frodeaa]
 localrepository = Gmail-Local
 remoterepository = Gmail-Remote
 postsynchook = notmuch new
 
-[Account Dintero]
+[Account dintero]
 localrepository = Dintero-Local
 remoterepository = Dintero-Remote
 postsynchook = notmuch new
@@ -27,6 +27,8 @@ oauth2_refresh_token_eval = pass_store("frode.aa@gmail.com/refresh_token")
 realdelete = no
 nametrans = gmail_nametrans
 folderfilter = gmail_folderfilter
+ssl_version = tls1_2
+tls_level = tls_secure
 ssl = true
 sslcacertfile = /usr/local/etc/openssl/cert.pem
 
@@ -45,6 +47,8 @@ oauth2_refresh_token_eval = pass_store("frode@dintero.com/refresh_token")
 realdelete = no
 nametrans = gmail_nametrans
 folderfilter = gmail_folderfilter
+ssl_version = tls1_2
+tls_level = tls_secure
 ssl = true
 sslcacertfile = /usr/local/etc/openssl/cert.pem
 
