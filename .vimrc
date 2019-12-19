@@ -23,6 +23,7 @@ set vb t_vb=
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
 
 let mapleader = ','
+let g:netrw_browse_split=4
 
 map <C-å> <C-]> """ Ctrl-] does not work with Norwegian keyboar
 
@@ -56,8 +57,7 @@ function! s:show_documentation()
   endif
 endfunction
 
-augroup mygroup
-  autocmd!
+augroup mygroup autocmd!
   " Setup formatexpr specified filetype(s).
   autocmd FileType typescript,json setl formatexpr=CocAction('formatSelected')
   " Update signature help on jump placeholder
@@ -67,4 +67,4 @@ augroup end
 filetype plugin indent on
 syntax on
 set background=light
-colorscheme solarized
+colorscheme nord
