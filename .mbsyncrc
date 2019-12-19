@@ -1,0 +1,85 @@
+#########################
+# frode@dintero.com
+#########################
+
+IMAPAccount dintero
+Host imap.gmail.com
+User frode@dintero.com
+PassCmd "pass frode@dintero.com/mbsync_password"
+AuthMechs LOGIN
+SSLType IMAPS
+CertificateFile /usr/local/etc/openssl/cert.pem
+PipelineDepth 50
+
+IMAPStore dintero-remote
+Account dintero
+
+MaildirStore dintero-local
+Subfolders Verbatim
+Path ~/mail/dintero/
+Inbox ~/mail/dintero/inbox
+
+Channel dintero-inbox
+Master :dintero-remote:
+Slave :dintero-local:
+Patterns "INBOX"
+
+Channel dintero-archive
+Master ":dintero-remote:[Gmail]/All Mail"
+Slave ":dintero-local:archive"
+Create Both
+SyncState *
+
+Channel dintero-sent
+Master ":dintero-remote:[Gmail]/Sent Mail"
+Slave ":dintero-local:sent"
+Create Both
+SyncState *
+
+Group dintero
+Channel dintero-inbox
+Channel dintero-sent
+Channel dintero-archive
+
+#########################
+# frode.aa@gmail.com
+#########################
+
+IMAPAccount frodeaa
+Host imap.gmail.com
+User frode.aa@gmail.com
+PassCmd "pass frode.aa@gmail.com/mbsync_password"
+AuthMechs LOGIN
+SSLType IMAPS
+CertificateFile /usr/local/etc/openssl/cert.pem
+PipelineDepth 50
+
+IMAPStore frodeaa-remote
+Account frodeaa
+
+MaildirStore frodeaa-local
+Subfolders Verbatim
+Path ~/mail/frodeaa/
+Inbox ~/mail/frodeaa/inbox
+
+Channel frodeaa-inbox
+Master :frodeaa-remote:
+Slave :frodeaa-local:
+Patterns "INBOX"
+
+Channel frodeaa-archive
+Master ":frodeaa-remote:[Gmail]/All Mail"
+Slave ":frodeaa-local:archive"
+Create Both
+SyncState *
+
+Channel frodeaa-sent
+Master ":frodeaa-remote:[Gmail]/Sent Mail"
+Slave ":frodeaa-local:sent"
+Create Both
+SyncState *
+
+Group frodeaa
+Channel frodeaa-inbox
+Channel frodeaa-sent
+Channel frodeaa-archive
