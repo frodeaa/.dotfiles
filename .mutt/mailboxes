@@ -1,1 +1,1 @@
-mailboxes "+Dintero/INBOX" "+Dintero/archive" "+Dintero/drafts" "+Dintero/sent" "+Gmail/INBOX" "+Gmail/archive" "+Gmail/drafts" "+Gmail/sent"
+mailboxes "+Gmail/INBOX" "+Gmail/archive" "+Gmail/drafts" "+Gmail/sent" "+dintero/INBOX" "+dintero/archive" "+dintero/drafts" "+dintero/sent" "+frodeaa/INBOX" "+frodeaa/archive" "+frodeaa/drafts" "+frodeaa/sent"
