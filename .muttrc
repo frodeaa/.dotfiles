@@ -21,7 +21,7 @@ unset move           # gmail does that
 auto_view text/html
 alternative_order text/plain text/enriched text/html
 
-source ~/.mutt/mailboxes
+# source ~/.mutt/mailboxes
 source ~/.mutt/bindings
 source ~/.mutt/macros
 source ~/.mutt/gpg
