@@ -17,3 +17,4 @@
   st = status
 [core]
 	excludesfile = /Users/frode/.gitignore
+	quotepath = false
